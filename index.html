@@ -488,12 +488,28 @@
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbxcxBaCsHKbfGNPlJQCYOyoH8xw67LpxCTQD_atbqWc8E7dSUf3V4UC7A35OIGg_UZ_/exec";
       const form = document.forms["Submit-To-Google-Sheet"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
-
+        //ketika tombol submit di klik
+        // tampilkan loading hilangkan kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {})
+          .then((response) => {
+            //ketika tombol submit di klik
+            // tampilkan kirim hilangkan loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            //tampilkan Alert
+            myAlert.classList.toggle("d-none");
+            //reset formnya
+            form.reset();
+            console.log("Success!", response);
+          })
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
