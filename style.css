@@ -12,11 +12,12 @@ section {
 /*my logo section */
 .logo-box {
   position: relative;
-  background-color: #f5d399;
+  background-color: #ff9100;
   border-radius: 10px;
-  width: 250px;
-  height: 450px;
-  margin-top: 10x;
+  width: 280px;
+  height: 400px;
+  margin-top: 50x;
+  margin-left: 30px;
   transform-style: preserve-3d;
 }
 
@@ -28,14 +29,14 @@ section {
   font-weight: bold;
   font-style: italic;
   top: 350px;
-  left: 450px;
+  left: 500px;
   opacity: 0;
   left: 50%;
   transform: translate(-50%, 0);
   transition: 0.5s;
 }
 .logo-box:hover::before {
-  opacity: 0.2;
+  opacity: 0.8;
 }
 
 .logo-name {
