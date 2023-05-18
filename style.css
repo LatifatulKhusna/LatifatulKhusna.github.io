@@ -14,10 +14,10 @@ section {
   position: relative;
   background-color: #f5d399;
   border-radius: 10px;
-  width: 200px;
+  width: 250px;
   height: 450px;
+  margin-top: 10x;
   transform-style: preserve-3d;
-  margin-top: 20px;
 }
 
 .logo-box::before {
