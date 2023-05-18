@@ -14,9 +14,9 @@ section {
   position: relative;
   background-color: #ff9100;
   border-radius: 10px;
-  width: 200px;
+  width: 280px;
   height: 400px;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-left: 15px;
   transform-style: preserve-3d;
 }
